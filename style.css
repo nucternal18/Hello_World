@@ -21,6 +21,136 @@
 
 }
 
+.about {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+
+}
+
+.about:before {
+  content: '';
+  background: url('./image/seaweed-washed-up-on-beach.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.about .about-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+
+}
+
+.about img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.about h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.about p {
+  font-size: 1.1rem;
+  padding: 5px;
+  width: 50%;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-style: oblique;
+}
+
+.contact {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+
+}
+
+.contact::before {
+  content: '';
+  background: url('./image/shiftKeyOnTypewriter.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.contact .contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.contact form {
+  font-size: 2rem;
+  text-align: left
+}
+
+.contact form input {
+  font-size: 2rem;
+}
+
+.contact button {
+  font-size: 1.3rem;
+  border-radius: 9%;
+}
+
+.portfolio {
+  background: var(--primary-color);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+
+}
+
+.portfolio:before {
+  content: '';
+  background: url('./image/jsWithLaptopCode.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+}
+
+.portfolio .portfolio-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.portfolio span {
+  font-size: 3rem;
+}
+
 .showcase {
   background: var(--primary-color);
   color: #fff;
