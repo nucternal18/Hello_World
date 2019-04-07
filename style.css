@@ -240,30 +240,20 @@ body {
 
 }
 
-@media (min-height: 320px) and (max-height: 1024px) {
-  .about {
-    overflow: auto;
-    align-items: flex-end;
-    
-  }
-
-  .about .about-inner {
-    align-self: end;
-    overflow: auto;
-  }
-
+@media (min-width: 400px) and (max-width: 736px) {
+  
   .about h1 {
     font-size: 1.5rem;
   }
 
   .about p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     
   }
 
   .about img {
     max-height: 100px;
-    max-width: 300px;
+    max-width: 200px;
     
   }
 }
