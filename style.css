@@ -70,7 +70,7 @@
 .about p {
   font-size: 1.1rem;
   padding: 5px;
-  width: 50%;
+  width: 70%;
   text-align: justify;
   letter-spacing: 1px;
   font-style: oblique;
@@ -240,7 +240,7 @@ body {
 
 }
 
-@media (min-width: 400px) and (max-width: 736px) {
+@media (min-width: 150px) and (max-width: 736px) {
   
   .about h1 {
     font-size: 1.5rem;
