@@ -248,6 +248,7 @@ body {
 
   .about p {
     font-size: 0.7rem;
+    max-width: 50%;
     
   }
 
