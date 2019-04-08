@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 .container {
@@ -87,37 +88,87 @@
 .contact::before {
   content: '';
   background: url('./image/shiftKeyOnTypewriter.jpg') no-repeat center center/cover;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
 
 }
 
-.contact .contact-inner {
+.contact .wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 300px;
+  width: 100%;
+  padding: 0 20px;
+
+}
+
+.contact .contact-form {
+  max-height: 400px;
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.13);
+  
+  
+}
+
+.contact .contac-input-fields { 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-right: 4%;
+  
+}
+
+.contac-input-fields,
+ .contact-msg {
+  width: 48%;
+  
+}
+
+.contac-input-fields .input,
+.contact-msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%
+
+}
+
+.contact-msg textarea {
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  color: #c5ecfd;
+}
+
+::-moz-input-placeholder {
+  color: #c5ecfd;
+}
+
+::-ms-input-placeholder {
+  color: #c5ecfd;
+}
+
+.contact-btn {
+  background: aqua;
   text-align: center;
-  height: 100%;
-}
-
-.contact form {
-  font-size: 2rem;
-  text-align: left
-}
-
-.contact form input {
-  font-size: 2rem;
-}
-
-.contact button {
-  font-size: 1.3rem;
-  border-radius: 9%;
-  background-color: aqua
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
 .portfolio {
@@ -257,4 +308,21 @@ body {
     max-width: 200px;
     
   }
+}
+
+@media screen and (max-width: 700px){
+  .contact .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-msg textarea {
+    height: 80px;
+  }
+
+  .contac-input-fields,
+ .contact-msg {
+   width: 100%;
+ }
+ 
+
 }
