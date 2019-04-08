@@ -310,7 +310,7 @@ body {
   }
 }
 
-@media screen and (max-width: 700px){
+@media (min-width: 150px) and (max-width: 736px){
   .contact .contact-form {
     flex-direction: column;
   }
